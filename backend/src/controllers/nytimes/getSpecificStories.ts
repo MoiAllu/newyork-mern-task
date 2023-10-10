@@ -15,7 +15,7 @@ const getSpecificStories: RequestHandler = async (req, res) => {
       });
     }
 
-    const url = `https://api.nytimes.com/svc/topstories/v2/${section.toLowerCase()}.json?api-key=gsXg80672WIn26CuAAHvLmxTNyrqKDCK`
+    const url = `https://api.nytimes.com/svc/topstories/v2/${section.toLowerCase()}.json?api-key=Dwf1NHPF6LVmaM40f1rHGdaIVYw9TcRO`
 
     const response = await fetch(url);
 
