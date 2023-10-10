@@ -1,11 +1,14 @@
-import { RequestHandler } from 'express'
-
+import { RequestHandler } from 'express';
 /**
  * Echo endpoint
  */
-const postRoot : RequestHandler = (req, res) => {
-    const json = req.body
-    res.json(json)
-}
+const postRoot: RequestHandler = async (req, res) => {
+  return res
+    .json({
+      message: 'Hello World!',
+      body: req.body,
+    })
+    .status(200);
+};
 
-export default postRoot
+export default postRoot;
