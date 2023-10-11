@@ -1,0 +1,15 @@
+{
+    "name": "newyork-mern",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "backend:dev": "cd backend && npm run dev",
+      "frontend:dev": "cd frontend && npm start",
+      "dev": "concurrently \"npm run backend:dev\" \"npm run frontend:dev\""
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+  }
+  
