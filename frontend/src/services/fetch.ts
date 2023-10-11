@@ -5,7 +5,6 @@ const getTopStories = async (params: string) => {
      console.log(res)
      if(res.status !== 200 || res.data.status !== "OK") {
         throw new Error("Error fetching stories");
-        return
      }
         const data = res.data.results.map((story: any) => ({
         title: story.title,
