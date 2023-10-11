@@ -15,7 +15,7 @@ const config = {
   clientCorsOrigins: {
     test: process.env['DEV_ORIGIN'] ?? '*',
     development: process.env['DEV_ORIGIN'] ?? '*',
-    production: process.env['PROD_ORIGIN'] ?? 'none',
+    production: process.env['PROD_ORIGIN'] ?? '*',
   },
 
   jwt_secret: process.env['JWT_SECRET'] ?? 'secret',
