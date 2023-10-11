@@ -13,9 +13,9 @@ import auth from './routes/auth';
 import nytimes from './routes/nytimes';
 
 const app = express();
-
+const mongoDB=process.env['MONGODB_URL']?.toString();
 mongoose.connect(
-  'mongodb+srv://talalstudent:pass123@cluster0.hpdfyrk.mongodb.net/root?retryWrites=true&w=majority'
+  mongoDB?.toString() ?? '',
 );
 
 // Check for MongoDB connection errors

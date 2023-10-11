@@ -6,7 +6,7 @@ import { RequestHandler } from 'express';
 const getStories: RequestHandler = async (_req, res) => {
   try {
     const url =
-      'https://api.nytimes.com/svc/topstories/v2/home.json?api-key=Dwf1NHPF6LVmaM40f1rHGdaIVYw9TcRO';
+      `https://api.nytimes.com/svc/topstories/v2/home.json?api-key=${process.env['NYTIMES_KEY']}`;
 
     const response = await fetch(url);
 
