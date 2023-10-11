@@ -9,7 +9,6 @@ import config from './config';
 import errorHandler from './middleware/errorHandler';
 import fourOhFour from './middleware/fourOhFour';
 import root from './routes/root';
-import auth from './routes/auth';
 import nytimes from './routes/nytimes';
 
 const app = express();
