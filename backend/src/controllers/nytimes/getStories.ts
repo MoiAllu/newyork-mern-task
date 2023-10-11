@@ -6,14 +6,14 @@ import { RequestHandler } from 'express';
 const getStories: RequestHandler = async (_req, res) => {
   try {
     const url =
-      `https://api.nytimes.com/svc/topstories/v2/home.json?api-key=${process.env['NYTIMES_KEY']}`;
+      'https://api.nytimes.com/svc/topstories/v2/home.json?api-key=gsXg80672WIn26CuAAHvLmxTNyrqKDCK';
 
     const response = await fetch(url);
 
     const json = await response.json();
 
     res.status(200).json(json);
-  } catch (error:any) {
+  } catch (error) {
     res.status(500).json({ error: error.message });
   }
 };

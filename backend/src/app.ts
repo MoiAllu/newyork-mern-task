@@ -9,9 +9,11 @@ import config from './config';
 import errorHandler from './middleware/errorHandler';
 import fourOhFour from './middleware/fourOhFour';
 import root from './routes/root';
+import auth from './routes/auth';
 import nytimes from './routes/nytimes';
 
 const app = express();
+
 const mongoDB=process.env['MONGODB_URL']?.toString();
 mongoose.connect(
   mongoDB?.toString() ?? '',
@@ -41,7 +43,7 @@ app.use(morgan('tiny'));
 
 // Apply routes before error handling
 app.use('/', root);
-// app.use('/auth', auth);
+app.use('/auth', auth);
 app.use('/nytimes', nytimes);
 
 // Apply error handling last

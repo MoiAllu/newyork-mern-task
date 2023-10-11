@@ -1,6 +1,6 @@
 import express from 'express';
 import getStories from '../controllers/nytimes/getStories';
-import getSpecificStories from '../controllers/nytimes/getSpecificStories';
+import getSpecificStories from '../controllers/nytimes/getSpecficStories';
 const root = express.Router();
 
 root.get('/', getStories);
