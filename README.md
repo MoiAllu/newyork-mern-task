@@ -4,7 +4,7 @@
 
 <h2>🚀 Demo</h2>
 
-[https://newyorktimes-mern-fe.netlify.app/](https://newyorktimes-mern-fe.netlify.app/)
+* Frontend: [https://newyorktimes-mern-fe.netlify.app/](https://newyorktimes-mern-fe.netlify.app/)
 
   
   
