@@ -11,6 +11,7 @@
     "typeRoots": ["./src/types"]
   },
   "include": [
+    "/api/*.ts",
     "src/**/*.ts"
   ],
   "exclude": ["node_modules"],
