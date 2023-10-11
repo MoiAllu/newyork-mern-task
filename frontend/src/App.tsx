@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "./config/axios";
 import CardsList from "./components/cardList";
 import getTopStories from "./services/fetch";
+import fetchStories from "./services/fetchStories";
 
 const App = () => {
   const [data, setData] = useState([]);
@@ -18,6 +19,7 @@ const App = () => {
       }
       setData(() => res);
     });
+    // console.log(fetchStories(path));
   }, [window.location.href]);
 
   return (
