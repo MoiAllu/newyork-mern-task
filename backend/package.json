@@ -12,7 +12,8 @@
     "dev": "cross-env NODE_ENV=development nodemon",
     "test": "cross-env NODE_ENV=test dotenv -e .env jest",
     "test:watch": "cross-env NODE_ENV=test dotenv -e .env jest --watch",
-    "lint": "npx eslint src"
+    "lint": "npx eslint src",
+    "vercel-build":"hello echo"
   },
   "dependencies": {
     "bcrypt": "^5.1.1",
