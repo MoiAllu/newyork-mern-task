@@ -5,7 +5,7 @@
 <h2>🚀 Demo</h2>
 
 * Frontend: [https://newyorktimes-mern-fe.netlify.app/](https://newyorktimes-mern-fe.netlify.app/)
-
+* Backend: [https://newyork-mern-task.vercel.app/](https://newyork-mern-task.vercel.app/)
   
   
 <h2>🧐 Features</h2>
