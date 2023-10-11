@@ -1,10 +1,20 @@
-import React from "react";
 import Navbar from "../components/navbar";
-const Layout = ({ children }: any) => {
+const Layout = ({
+  children,
+  navbarValue,
+  setNavbarValue,
+  backdropHanlder,
+  setBackdropHanlder,
+}: any) => {
   return (
     <>
-      <Navbar />
-      <div className="lg:absolute top-[68px] bg-gray-50 w-full h-full">
+      <Navbar
+        setNavbarValue={setNavbarValue}
+        navbarValue={navbarValue}
+        backdropHanlder={backdropHanlder}
+        setBackdropHanlder={setBackdropHanlder}
+      />
+      <div className="absolute top-[68px] bg-gray-50 w-full h-full">
         {children}
       </div>
     </>

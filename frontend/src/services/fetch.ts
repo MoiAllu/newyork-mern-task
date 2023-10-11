@@ -1,6 +1,8 @@
 import axios from "../config/axios";
-const getTopStories = async (params: string) => {
-  console.log(params)
+const getTopStories = async (params: string ) => {
+  if (!params) {
+    params = "home";  
+  }
      const res = await axios.get("/nytimes/topstories/" + params);
      console.log(res)
      if(res.status !== 200 || res.data.status !== "OK") {
