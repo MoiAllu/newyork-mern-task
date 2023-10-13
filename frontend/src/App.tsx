@@ -12,14 +12,22 @@ const App = () => {
 
   useEffect(() => {
     setLoading(() => true);
-    getTopStories(navbarValue).then((res: any) => {
-      if (res.error) {
+
+    getTopStories(navbarValue)
+      .then((res: any) => {
+        if (res.error) {
+          console.log("error", res.error);
+          setData(() => []);
+          return;
+        }
+        setData(() => res);
+        setLoading(() => false);
+      })
+      .catch((err) => {
+        console.log("error", err);
         setData(() => []);
-        return;
-      }
-      setData(() => res);
-      setLoading(() => false);
-    });
+        setLoading(() => false);
+      });
   }, [navbarValue]);
 
   return (
